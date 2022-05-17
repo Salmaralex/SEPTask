@@ -9,3 +9,12 @@ $('#clk').on('click',function(){
         $('#res').text(res)
     })
 })
+$('#clk1').on('click',function(){
+    $.ajax({
+        type:'POST',
+        url:URL
+    }).done(function(res){
+        console.log(res)
+        $('#res').text(res)
+    })
+})
